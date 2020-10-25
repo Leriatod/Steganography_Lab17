@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+
+
+    <None Update="original.bmp">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="steganographyAditive.bmp">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="originalLSB.bmp">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="steganographyLSB.bmp">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
